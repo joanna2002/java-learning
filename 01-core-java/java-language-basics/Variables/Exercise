@@ -1,0 +1,69 @@
+Here's a **hands-on Java exercise** that helps you practice:
+
+* ✅ Instance variables
+* ✅ Class (static) variables
+* ✅ Local variables
+* ✅ Method parameters
+* ✅ Java naming conventions
+
+---
+
+## 🧪 **Exercise: Create a `Student` Class**
+
+### 🎯 Your Goal:
+
+Build a `Student` class that tracks individual students and the total number of students created.
+
+---
+
+### 🔧 Requirements:
+
+#### 1. **Fields**:
+
+* An **instance variable** `name` (student’s name)
+* An **instance variable** `gradeLevel` (e.g., 10, 11, 12)
+* A **class variable** `schoolName` (shared by all students)
+* A **class variable** `studentCount` (count how many students have been created)
+
+#### 2. **Constructor**:
+
+* Takes two **parameters**: `String name`, `int gradeLevel`
+* Sets the instance variables
+* Increments the static variable `studentCount`
+
+#### 3. **Method**:
+
+* A method `introduce()` that:
+
+  * Uses a **local variable** to format the intro message.
+  * Prints something like:
+    `"Hi, I'm Alice in grade 10 at Green High School."`
+
+#### 4. **Main Method**:
+
+* Set `schoolName` to `"Green High School"`
+* Create at least 2 students
+* Call their `introduce()` methods
+* Print the total number of students at the end
+
+---
+
+### 🧩 Bonus:
+
+* Follow Java naming conventions
+* Add a constant: `static final int MAX_GRADE = 12;`
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
