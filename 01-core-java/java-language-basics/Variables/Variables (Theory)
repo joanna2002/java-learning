@@ -1,0 +1,31 @@
+Instance Variables (non-static fields):
+- their values are unique to each instance of a class (meaning to each object)
+
+Class Variables (static fields):
+- a variable tha belongs to the class itself, so all object share the same single copy
+- it is declared with the static modifier
+
+Local Variables:
+- temporary variables used inside methods to do a certain task
+- they are only created when the method runs, and deleted when the method ends
+
+Parameters (inputs to methods)
+- input values you give to a method when you call it
+- they are declared inside parentheses of a method
+- they are not fields of a class, they're only used inside the method
+
+Rules of Java Variable Naming:
+1. Case-sensitive – Speed and speed are different.
+2. Must start with a letter, $, or _ (but using $ or _ is not recommended).
+3. Can include letters, digits, $, or _ after the first character.
+4. No spaces allowed.
+5. Cannot be a Java keyword (like int, class, while, etc.).
+
+Best practices (conventions)
+1. Start names with a lowercase letter
+2. use camelCase for variables with multiple words (ex. currentSpeed)
+3. for constants (static final variables), use all caps with underscores (ex. MAX_SPEED)
+4. use meaningful names
+
+
+
