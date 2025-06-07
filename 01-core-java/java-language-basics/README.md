@@ -1,0 +1,7 @@
+- variables
+- data types
+- arrays
+- operators
+- expressions, statements and blocks
+- control flow statement
+- switch statements
