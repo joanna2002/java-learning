@@ -1,0 +1,62 @@
+Java is a statically typed language
+- all variables must be declared with a type before use
+
+Primitive Data Types
+| Type        | Size             | Description                                                            |
+| ----------- | ---------------- | ---------------------------------------------------------------------- |
+| **byte**    | 8-bit            | Range: -128 to 127. Memory efficient; useful for large arrays.         |
+| **short**   | 16-bit           | Range: -32,768 to 32,767. Also useful for saving memory.               |
+| **int**     | 32-bit           | Default integer type. Range: -2³¹ to 2³¹ - 1.                          |
+| **long**    | 64-bit           | Range: -2⁶³ to 2⁶³ - 1.                                                |
+| **float**   | 32-bit           | Single-precision floating point. Not for precise values like currency. |
+| **double**  | 64-bit           | Double-precision floating point. Preferred for decimal numbers.        |
+| **boolean** | 1-bit (abstract) | Values: `true` or `false`. For logical flags. Size is undefined.       |
+| **char**    | 16-bit           | Single Unicode character. Range: '\u0000' to '\uffff' (0 to 65,535).   |
+
+Strings
+- not primitive
+- defined using double quotes
+- immutable: cannot be changed once created
+- handled via the java.lang.String class
+
+Default values for fields (class-level variables)
+- it is bad practice to rely on defaults - always initialize explicitly
+| Data Type             | Default Value |
+| --------------------- | ------------- |
+| byte                  | 0             |
+| short                 | 0             |
+| int                   | 0             |
+| long                  | 0L            |
+| float                 | 0.0f          |
+| double                | 0.0d          |
+| char                  | '\u0000'      |
+| boolean               | false         |
+| Object (e.g., String) | null          |
+
+Local variables
+- must be explicitly initialized before use
+- the compiler doesn't automatically assign a default value
+- accessing uninitialized local variables causes compile-time error
+
+null literal
+- can be assigned to any reference type (ex. String, custom classes)
+- indicates "no object"
+
+class literals
+- a class literal is a way to refer to the Class object that represent a specific data type
+- ex. TypeName.class (it returns a reference to the Class object associated with TypeName
+- when to use it:
+    - to get metadata about a class (name, fields, methods...) using reflection
+    - pass a class as an argument (ex. to a method or constructor)
+    - dynamically load or analyze classes at runtime
+
+Using underscores in numerical literals
+- to improve readability of large numbers
+- valid usage:
+    - between digits only
+    - in any base (decimal, hex, binary)
+- invalid usage:
+    - At the start or end of number: 52_, _52
+    - Adjacent to decimal point: 3_.14, 3._14
+    - Before suffix: 999_L
+    - Inside prefixes: 0_x52
