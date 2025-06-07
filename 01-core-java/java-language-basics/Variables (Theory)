@@ -1,0 +1,10 @@
+Instance Variables (non-static fields):
+- their values are unique to each instance of a class (meaning to each object)
+
+Class Variables (static fields):
+- a variable tha belongs to the class itself, so all object share the same single copy
+- it is declared with the static modifier
+
+Local Variables:
+- temporary variables used inside methods to do a certain task
+- they are only created when the method runs, and deleted when the method ends
