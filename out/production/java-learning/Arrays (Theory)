@@ -1,0 +1,107 @@
+🔹 What is an Array?
+- An array is like a container that holds a fixed number of values.
+- All the values in an array must be of the same type (like all int, or all String).
+- Once you create an array, you cannot change its size.
+
+🔹 Why Use Arrays?
+- To store multiple values of the same type in one variable.
+- Instead of creating 10 separate variables for 10 numbers, you can store them all in a single array.
+
+🔹 Array Elements
+- Each value in an array is called an element.
+- Each element has a position number called an index.
+- Indexing starts at 0, not 1.
+- So the 1st element is at index 0
+- The 6th element is at index 5
+
+🔹 Creating an Array (Step-by-Step)
+- int[] anArray;          // Step 1: Declare an array of integers
+- anArray = new int[10];  // Step 2: Allocate memory for 10 integers
+
+Accessing a value from an array:
+- System.out.println(array[1]);
+
+🔹 What Does It Mean to “Declare an Array”?
+When we say we’re declaring an array, we are telling Java:
+“Hey, I want to create a variable that will hold an array of some type, like integers or strings.”
+But this does not create the actual array — it only sets up a reference variable that can point to an array later.
+
+    Example:
+    int[] anArray;
+    - int[] (means an array of integers)
+    - anArray (the name of the variable)
+    - this line of code doesn't create an array, it just shows that the variable anArray will hold a integer array
+
+Alternative syntax to declare an array (not recommended)
+- int anArray[]; (legal but not recommended as it can create confusion)
+
+🔹 1. Creating an Array
+To create an array, you use the new keyword along with the data type and the number of elements you want.
+
+    Example:
+    int[] anArray;
+    anArray = new int[10]; // creates space for 10 integers
+    int[] anArray; → declares an array of integers
+
+    - new int[10]; → creates the actual array in memory
+    - Now anArray can hold 10 integer values, from index 0 to 9
+    - Without this creation line, the compiler gives an error
+
+Create and initialize an array at the same time
+    int[] anArray = {
+        100, 200, 300
+    };
+- the length of the array is automatically set to the number of elements provided
+
+Multidimensional arrays
+    String[][] names = {
+        {"Mr. ", "Mrs. ", "Ms. "},
+        {"Smith", "Jones"}
+    };
+- this is a 2d array of strings, with 2 rows
+- you access elements using 2 indexes (ex. names[0][0])
+
+Find the length of an array
+    System.out.println(anArray.length);
+
+Copying Arrays with arraycopy()
+    System.arraycopy(Object src, int srcPos, Object dest, int destPos, int length);
+
+    What it does:
+    - Copies elements from one array to another.
+    - src – the source array
+    - srcPos – where to start in the source
+    - dest – the destination array
+    - destPos – where to start putting elements in the destination
+    - length – how many elements to copy
+
+    Example:
+    String[] copyFrom = {
+        "Affogato", "Americano", "Cappuccino"
+    };
+
+    String[] copyTo = new String[3];
+
+    System.arraycopy(copyFrom, 0, copyTo, 0, 3);
+
+Using Arrays.copyOfRange() - simpler alternative
+- automatically creates the new array
+- start index is included, end index is excluded
+
+    Example:
+        String[] copyTo = java.util.Arrays.copyOfRange(copyFrom, 0, 3);
+
+🔹 3. Useful Methods in java.util.Arrays
+| Method           | Purpose                                                |
+| ---------------- | ------------------------------------------------------ |
+| `copyOfRange()`  | Copy a range from an array                             |
+| `binarySearch()` | Search for a value in a **sorted** array               |
+| `equals()`       | Compare if two arrays are the same                     |
+| `fill()`         | Fill an array with a single repeated value             |
+| `sort()`         | Sort the array in ascending order                      |
+| `parallelSort()` | Sort using multiple processors (faster for big arrays) |
+| `stream()`       | Convert array to a stream (used with lambdas)          |
+| `toString()`     | Print the array in `[a, b, c]` format                  |
+
+Convert Array to String
+    System.out.println(java.util.Arrays.toString(copyTo));

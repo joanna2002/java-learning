@@ -1,0 +1,76 @@
+## 🧪 **Exercise: Coffee Shop Array Challenge ☕**
+
+### 📝 **Problem Statement:**
+
+You are working on a system for a coffee shop. You need to manage the coffee
+menu and perform various operations using Java arrays.
+
+---
+
+### 🔧 **Requirements (Step-by-Step Tasks):**
+
+#### 1. **Declare and Initialize an Array**
+
+* Create an array of `String` to store the following coffee names:
+
+  ```
+  "Affogato", "Americano", "Cappuccino", "Corretto", "Cortado",
+  "Doppio", "Espresso", "Frappuccino", "Freddo", "Lungo"
+  ```
+
+#### 2. **Print the Full Menu**
+
+* Use a `for` loop (or `for-each`) to print all the coffee names with their indexes.
+
+#### 3. **Copy Part of the Menu**
+
+* Use `System.arraycopy()` to copy the first 5 coffee names into a new array called `featuredMenu`.
+* Print the `featuredMenu` array.
+
+#### 4. **Use `Arrays.copyOfRange()`**
+
+* Use `Arrays.copyOfRange()` to create a new array with the **last 3** coffee names.
+* Print the result.
+
+#### 5. **Sort the Menu Alphabetically**
+
+* Use `Arrays.sort()` to sort the original coffee menu.
+* Print the sorted array using `Arrays.toString()`.
+
+#### 6. **Search for a Coffee**
+
+* Use `Arrays.binarySearch()` to find the index of `"Espresso"` in the sorted array.
+* Print the result.
+
+#### 7. **Bonus (Multidimensional Array)**
+
+* Create a 2D array called `menuDetails` with two rows:
+
+  * Row 1: Coffee types → `"Espresso"`, `"Latte"`, `"Mocha"`
+  * Row 2: Sizes → `"Small"`, `"Medium"`, `"Large"`
+* Print all combinations like:
+  `Espresso Small`, `Latte Medium`, etc.
+
+---
+
+### ✅ **What This Covers:**
+
+* Declaring arrays
+* Initializing with `new` and shortcut syntax
+* Accessing elements by index
+* Copying arrays (`System.arraycopy`, `Arrays.copyOfRange`)
+* Sorting and searching with `Arrays` methods
+* Working with multidimensional arrays
+* Looping through arrays
+
+---
+
+### 🧠 Tip:
+
+Use the `java.util.Arrays` import at the top of your code:
+
+```java
+import java.util.Arrays;
+```
+
+
