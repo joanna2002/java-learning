@@ -11,8 +11,8 @@ public class CoffeShop {
         };
 
         // 2. print the full menu using a for loop
-        for (int i = 0; i < coffeeMenu.length; i++) {
-            System.out.println(coffeeMenu[i]);
+        for (String coffeeItem : coffeeMenu) {
+            System.out.println(coffeeItem);
         }
 
         System.out.println();
@@ -23,18 +23,19 @@ public class CoffeShop {
         System.arraycopy(coffeeMenu, 0, featuredMenu, 0, 5);
 
         // print the featuredMenu array
-        for (int i = 0; i < featuredMenu.length; i++) {
-            System.out.println(featuredMenu[i]);
-        };
+        for (String coffeeItem : featuredMenu) {
+            System.out.println(coffeeItem);
+        }
+
 
         System.out.println();
 
         // 4. copy last 3 coffee names in a new array and print
         String[] onSale = Arrays.copyOfRange(coffeeMenu, 7, 10);
 
-        for (int i = 0; i < onSale.length; i++) {
-            System.out.println(onSale[i]);
-        };
+        for (String coffeeItem : onSale) {
+            System.out.println(coffeeItem);
+        }
 
         System.out.println();
 
